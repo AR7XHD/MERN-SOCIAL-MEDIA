@@ -1,0 +1,221 @@
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 288px;
+  height: 100vh;
+  background: #ffffff;
+  border-right: 1px solid #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  z-index: 1000;
+}
+
+/* Header */
+.sidebar-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 20px;
+}
+
+.sidebar-brand {
+  font-family: Outfit, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 700;
+  font-size: 20px;
+  color: #4F39F6; /* indigo */
+}
+
+/* Separator */
+.sidebar-sep {
+  height: 1px;
+  background: #D1D5DC;
+}
+
+/* Menu container */
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 20px;
+}
+
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  height: 40px;
+  padding: 0 14px;
+  border-radius: 12px;
+  color: #4A5565; /* slate-600 */
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.menu-item:hover {
+  background: #F3F4F6; /* light hover */
+}
+
+.menu-item-active {
+  background: #EEF2FF; /* indigo-50 */
+  color: #432DD7; /* primary */
+}
+
+.menu-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.menu-label {
+  font-family: Outfit, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  font-weight: 500;
+}
+
+/* Create Post button */
+.create-post-btn {
+  margin-top: 8px;
+  height: 44px;
+  border-radius: 8px;
+  background: linear-gradient(90deg, #615FFF 0%, #9810FA 100%);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  text-decoration: none;
+  font-family: Outfit, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 16px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.05);
+}
+
+.create-post-icon {
+  width: 18px;
+  height: 18px;
+  border: 1.5px solid #FFFFFF;
+  border-radius: 9999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  margin-bottom: 2px;
+  margin-right: 2px;
+}
+
+/* Footer user section wrapper (for Clerk UserButton) */
+.sidebar-footer {
+  margin-top: auto;
+  padding: 12px 20px;
+  border-top: 1px solid #E5E7EB;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-footer .user-meta {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+.sidebar-footer .user-name {
+  font-family: Outfit, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 600;
+  font-size: 14px;
+  color: #0F172A; /* slate-900 */
+}
+.sidebar-footer .user-username {
+  font-family: Outfit, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, Noto Sans, "Apple Color Emoji", "Segoe UI Emoji";
+  font-weight: 400;
+  font-size: 12px;
+  color: #6B7280; /* gray-500 */
+}
+.sidebar-footer .signout-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #99A1AF; /* muted */
+  cursor: pointer;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+.sidebar-footer .signout-btn:hover {
+  background: #F3F4F6;
+  color: #4B5563; /* gray-600 */
+}
+
+/* Main content wrapper (used by layout to offset fixed sidebar) */
+.with-sidebar {
+  margin-left: 288px;
+}
+/* End of sidebar styles */
+
+/* Hamburger button (mobile) */
+.hamburger {
+  position: fixed;
+  top: 9px;
+  left: 12px;
+  width: 40px;
+  height: 40px;
+  display: none; /* shown on mobile via media query */
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  border-radius: 8px;
+  z-index: 1100;
+}
+
+.hamburger .bar {
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background: #111827; /* gray-900 */
+  transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.hamburger .bar1 { transform: translateY(-6px); }
+.hamburger .bar2 { transform: translateY(0); }
+.hamburger .bar3 { transform: translateY(6px); }
+
+.hamburger.active .bar1 { transform: translateY(0) rotate(45deg); }
+.hamburger.active .bar2 { opacity: 0; }
+.hamburger.active .bar3 { transform: translateY(0) rotate(-45deg); }
+
+/* Mobile overlay */
+.sidebar-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.25);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+  z-index: 900;
+}
+
+.sidebar-overlay.open { opacity: 1; pointer-events: auto; }
+
+/* Responsive behavior */
+@media (max-width: 1024px) {
+  .hamburger { display: inline-flex; }
+
+  .sidebar {
+    transform: translateX(-100%);
+    transition: transform 0.25s ease;
+  }
+  .sidebar.open { transform: translateX(0%); }
+
+  /* When drawer is open, keep cross inside the 288px sidebar with 12px right padding */
+  .hamburger.active { left: calc(288px - 52px); top: 9px; }
+
+  .with-sidebar { margin-left: 0; }
+}
+
+

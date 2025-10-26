@@ -1,0 +1,180 @@
+/* Stories Container */
+.stories-container {
+  display: flex;
+  gap: 16px;
+  padding: 0 0 20px 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  scrollbar-color: #D1D5DC #F9FAFB;
+}
+
+.stories-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.stories-container::-webkit-scrollbar-track {
+  background: #F9FAFB;
+  border-radius: 3px;
+}
+
+.stories-container::-webkit-scrollbar-thumb {
+  background: #D1D5DC;
+  border-radius: 3px;
+}
+
+.stories-container::-webkit-scrollbar-thumb:hover {
+  background: #9CA3AF;
+}
+
+
+
+/* Story Card Base */
+.story-card {
+  position: relative;
+  width: 120px;
+  height: 160px;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  flex-shrink: 0;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Create Story Card */
+.create-story-card {
+  background: linear-gradient(180deg, #EEF2FF 0%, #FFFFFF 100%);
+  border: 2px dashed #A3B3FF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.create-story-icon {
+  width: 40px;
+  height: 40px;
+  background: #615FFF;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create-story-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  color: #314158;
+  text-align: center;
+}
+
+
+
+/* Story Background */
+.story-background {
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+}
+
+.story-texts {
+  background: linear-gradient(180deg, #615FFF 0%, #9810FA 100%);
+}
+
+.story-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.story-background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Cover the card */
+  z-index: 1;
+}
+
+.story-image::before, .story-background-video::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+}
+
+
+/* Story Avatar */
+.story-avatar {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  z-index: 2;
+}
+
+.avatar-img {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0px 0px 0px 1px #F3F4F6, 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* Story Content */
+.story-content {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 40px;
+  z-index: 2;
+}
+
+.story-text-contents {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.95);
+  display: block;
+  text-align: left;
+  width: 100%;
+  margin-bottom: 12px;
+}
+
+
+
+/* Story Time */
+.story-time {
+  position: absolute;
+  bottom: 12px;
+  right: 12px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #FFFFFF;
+  z-index: 2;
+  text-align: right;
+}
+
+/* Hover Effects */
+.story-card:hover {
+  transform: translateY(-2px);
+  transition: transform 0.2s ease;
+}
+
+.create-story-card:hover {
+  border-color: #615FFF;
+  background: linear-gradient(180deg, #E0E7FF 0%, #F8FAFC 100%);
+}
+
+.create-story-card:hover .create-story-icon {
+  background: #4F39F6;
+  transform: scale(1.05);
+  transition: all 0.2s ease;
+}
+

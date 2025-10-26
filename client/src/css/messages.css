@@ -1,0 +1,117 @@
+/* Messages Page Container */
+.messages-page-container {
+  background: #F8FAFC;
+  padding: 24px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Messages Header */
+.messages-header {
+  margin-bottom: 32px;
+}
+
+.messages-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #0F172B;
+  margin: 0;
+}
+
+.messages-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #45556C;
+  margin-top: 8px;
+}
+
+/* Message List Container */
+.message-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Message User Card */
+.message-user-card {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: 600px;
+}
+
+.card-main-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.card-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.card-user-details {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-user-name {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #314158;
+}
+
+.card-user-handle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  color: #6A7282;
+}
+
+.card-user-bio {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4A5565;
+  margin: 8px 0 0 0;
+  white-space: pre-wrap;
+}
+
+/* Card Action Buttons */
+.card-action-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.action-button {
+  background: #F1F5F9;
+  border: none;
+  border-radius: 4px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #1D293D;
+  transition: background-color 0.2s ease;
+}
+
+.action-button:hover {
+  background: #E2E8F0;
+}

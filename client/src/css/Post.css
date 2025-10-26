@@ -1,0 +1,119 @@
+/* Post Card Container */
+.post-card {
+  background: #FFFFFF;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  margin-bottom: 20px;
+  max-width: 600px; /* Control the max width of the post */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Post Header */
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.post-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 12px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.post-user-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.post-user-name-verified {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.post-user-name {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #000000;
+}
+
+.verified-badge {
+  color: #2B7FFF;
+}
+
+.post-user-handle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  color: #6A7282;
+}
+
+/* Post Content */
+.post-content {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #1E2939;
+  margin-bottom: 12px;
+}
+
+.post-content p {
+  margin: 0;
+  white-space: pre-wrap; /* Preserve line breaks */
+}
+
+/* Hashtag Styling */
+.hashtag {
+  color: #2B7FFF; /* A distinct blue color */
+  font-weight: 500;
+  cursor: pointer;
+  transition: text-decoration 0.2s ease;
+}
+
+.hashtag:hover {
+  text-decoration: underline;
+}
+
+/* Post Image */
+.post-image-container {
+  margin-bottom: 12px;
+}
+
+.post-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* Post Footer */
+.post-footer {
+  border-top: 1px solid #D1D5DC;
+  padding-top: 12px;
+}
+
+.post-actions {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  color: #4A5565;
+}
+
+.post-action {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.post-action:hover {
+  color: #000000;
+}

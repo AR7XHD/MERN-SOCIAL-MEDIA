@@ -1,0 +1,225 @@
+/* Discover Page Container */
+.discover-page-container {
+  background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+  padding: 24px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+/* Discover Header */
+.discover-header {
+  margin-bottom: 32px;
+}
+
+.discover-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #0F172B;
+  margin: 0;
+}
+
+.discover-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #45556C;
+  margin-top: 8px;
+}
+
+/* Search Container */
+.search-container {
+  background: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(226, 232, 240, 0.6);
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 25px;
+  margin-bottom: 32px;
+}
+
+.search-input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  color: #90A1B9;
+  z-index: 1;
+}
+
+.search-input {
+  width: 100%;
+  height: 42px;
+  border: 1px solid #D1D5DC;
+  border-radius: 6px;
+  padding: 0 16px 0 44px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  color: #000000;
+  background: #FFFFFF;
+}
+
+.search-input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #615FFF;
+  box-shadow: 0 0 0 3px rgba(97, 95, 255, 0.1);
+}
+
+/* Discover Cards Grid */
+.discover-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
+  gap: 24px;
+  max-width: 1200px;
+}
+
+/* Discover Card */
+.discover-card {
+  background: rgba(255, 255, 255, 0.002);
+  border: 1px solid #E5E7EB;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 25px 17px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 400px;
+}
+
+/* Discover Avatar */
+.discover-avatar {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+  margin-bottom: 18px;
+}
+
+/* Discover User Info */
+.discover-user-info {
+  margin-bottom: 20px;
+}
+
+.discover-user-name {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0 0 4px 0;
+}
+
+.discover-user-handle {
+  font-family: 'Outfit', sans-serif;
+  font-size: 14px;
+  color: #6A7282;
+  margin: 0 0 12px 0;
+}
+
+.discover-user-bio {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #4A5565;
+  margin: 0;
+  max-width: 215px;
+}
+
+/* Discover User Stats */
+.discover-user-stats {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.discover-stat {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: transparent;
+  border: 1px solid #D1D5DC;
+  border-radius: 20px;
+  padding: 5px 13px;
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  color: #4A5565;
+}
+
+/* Discover Actions */
+.discover-actions {
+  display: flex;
+  gap: 8px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.discover-follow-btn {
+  background: linear-gradient(90deg, #615FFF 0%, #9810FA 100%);
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  height: 40px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  justify-content: center;
+  flex: 1;
+}
+
+.discover-follow-btn:hover {
+  opacity: 0.9;
+}
+
+.discover-follow-btn.following {
+  background: linear-gradient(90deg, #615FFF 0%, #9810FA 100%);
+}
+
+.discover-message-btn {
+  background: transparent;
+  border: 1px solid #62748E;
+  border-radius: 6px;
+  width: 50px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: #62748E;
+}
+
+.discover-message-btn:hover {
+  background: #F8FAFC;
+  border-color: #4A5565;
+  color: #4A5565;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .discover-cards-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .discover-page-container {
+    padding: 16px;
+  }
+}

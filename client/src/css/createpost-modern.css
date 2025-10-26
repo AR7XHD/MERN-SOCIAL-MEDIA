@@ -1,0 +1,237 @@
+/* Create Post Page Container */
+.createpost-page-container {
+  background: linear-gradient(180deg, #F8FAFC 0%, #FFFFFF 100%);
+  padding: 24px;
+  height: 100%;
+  overflow-y: auto;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Create Post Header */
+.createpost-header {
+  margin-bottom: 32px;
+}
+
+.createpost-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  color: #0F172B;
+  margin: 0;
+}
+
+.createpost-subtitle {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #45556C;
+  margin-top: 8px;
+}
+
+/* Create Post Card */
+.createpost-card {
+  background: #FFFFFF;
+  box-shadow: 0px 4px 6px -1px rgba(0, 0, 0, 0.1), 0px 2px 4px -2px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  padding: 32px;
+  max-width: 512px;
+}
+
+/* User Info Section */
+.createpost-user-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.createpost-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+}
+
+.createpost-user-details h2 {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  margin: 0;
+}
+
+.createpost-user-details p {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #6A7282;
+  margin: 0;
+}
+
+/* Textarea Section */
+.createpost-textarea-container {
+  margin-bottom: 24px;
+}
+
+.createpost-textarea {
+  width: 100%;
+  min-height: 120px;
+  border: none;
+  outline: none;
+  resize: vertical;
+  font-family: 'Outfit', sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1E2939;
+  background: transparent;
+  padding: 0;
+}
+
+.createpost-textarea::placeholder {
+  color: #99A1AF;
+  font-size: 14px;
+}
+
+.createpost-textarea:focus {
+  outline: none;
+}
+
+/* Post Actions */
+.createpost-actions {
+  border-top: 1px solid #D1D5DC;
+  padding-top: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Media Upload Button */
+.createpost-media-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.createpost-media-btn:hover {
+  background: #F1F5F9;
+}
+
+.createpost-media-btn svg {
+  color: #6A7282;
+}
+
+/* Hidden File Input */
+.createpost-file-input {
+  display: none;
+}
+
+/* Publish Button */
+.createpost-publish-btn {
+  background: linear-gradient(90deg, #615FFF 0%, #9810FA 100%);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 24px;
+  height: 36px;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  min-width: 120px;
+}
+
+.createpost-publish-btn:hover {
+  opacity: 0.9;
+}
+
+.createpost-publish-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Image Preview */
+.createpost-image-preview {
+  margin: 16px 0;
+  position: relative;
+}
+
+.createpost-preview-image {
+  width: 100%;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+}
+
+.createpost-remove-image {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: rgba(0, 0, 0, 0.7);
+  border: none;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.createpost-remove-image:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+
+/* Character Counter */
+.createpost-char-counter {
+  font-family: 'Outfit', sans-serif;
+  font-size: 12px;
+  color: #6A7282;
+  margin-left: auto;
+  margin-right: 12px;
+}
+
+.createpost-char-counter.warning {
+  color: #F59E0B;
+}
+
+.createpost-char-counter.error {
+  color: #EF4444;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .createpost-page-container {
+    padding: 16px;
+  }
+  
+  .createpost-card {
+    padding: 20px;
+    max-width: none;
+  }
+  
+  .createpost-actions {
+    flex-direction: column;
+    gap: 12px;
+    align-items: stretch;
+  }
+  
+  .createpost-publish-btn {
+    width: 100%;
+  }
+}

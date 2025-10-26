@@ -1,0 +1,116 @@
+/* Recent Messages Card */
+.recent-messages-card {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Recent Messages Title */
+.recent-messages-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1D293D;
+  margin: 0 0 16px 0;
+}
+
+/* Messages Container */
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/* Message Item */
+.message-item {
+  display: flex;
+  align-items: flex-start;
+  padding: 8px 0;
+  position: relative;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  padding-right: 24px; /* Add space for unread indicator */
+}
+
+.message-item:last-child {
+  border-bottom: none;
+}
+
+/* Message Avatar */
+.message-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  margin-right: 8px;
+  flex-shrink: 0;
+}
+
+/* Message Content */
+.message-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.message-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.message-user-name {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1D293D;
+}
+
+.message-time {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #90A1B9;
+  flex-shrink: 0;
+}
+
+.message-text {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #6A7282;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Unread Indicator */
+.unread-indicator {
+  position: absolute;
+  right: 4px;
+  bottom: 8px;
+}
+
+.unread-count {
+  background: #615FFF;
+  color: #FFFFFF;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+}

@@ -1,0 +1,57 @@
+/* Sponsored Card */
+.sponsored-card {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1), 0px 1px 2px -1px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 16px;
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Sponsored Title */
+.sponsored-title {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #1D293D;
+  margin: 0 0 16px 0;
+}
+
+/* Sponsored Image Container */
+.sponsored-image-container {
+  margin-bottom: 16px;
+}
+
+.sponsored-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Sponsored Content */
+.sponsored-content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sponsored-category {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #45556C;
+  margin: 0;
+}
+
+.sponsored-description {
+  font-family: 'Outfit', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #90A1B9;
+  margin: 0;
+}
